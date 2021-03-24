@@ -5,17 +5,17 @@
 
 # LOMBOK
 
-##  @Builder
+- ##  @Builder
 
-- 객체를 만들어 줄때 의미가 잘 들어나도록 코드 변경 가능
+  - 객체를 만들어 줄때 의미가 잘 들어나도록 코드 변경 가능
 
-  ```java
-  Restaurant restaurant1 = Restaurant.builder();
-  			.id(1004L)
-              .name("JOCKER House")
-              .address("Seoul")
-              .build();
-  ```
+    ```java
+    Restaurant restaurant1 = Restaurant.builder();
+          .id(1004L)
+                .name("JOCKER House")
+                .address("Seoul")
+                .build();
+    ```
 
-  
+
 
