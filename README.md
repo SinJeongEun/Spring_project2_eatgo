@@ -78,6 +78,43 @@
   - ## @JsonInclude
 
     - @JsonInclude(JsonInclude.Include.NON_DEFAULT)  : 해당 필드가 null이면 나타내지 않음
+    
+- # 프로젝트 분리
+
+    - ## common-api
+
+      - ```java
+        //build.gradle
+        //gradle로 테스트 실행
+        jar{
+            enabled = true
+        }
+        bootjar{
+            enabled = false
+        }
+        ```
+
+
+
+    -  ## admin-api
+
+      - ``` java
+        dependencies{
+        implementation project(': datgo-commom')
+        }
+        ```
+
+
+
+    - ## customer -api
+
+      - ```java
+        dependencies{
+        implementation project(': datgo-commom')
+        }
+        ```
+
+
 
 
 
