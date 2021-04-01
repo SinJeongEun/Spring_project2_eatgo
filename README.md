@@ -5,6 +5,8 @@
 
 - # @Pathvariable 
    - 파라미터에 사용하면 URI의 일부를 변수로 전달
+- # @RequestBody
+    - 어노테이션을 이용하면 HTTP 요청 몸체를 자바 객체로 전달받을 수 있다.
 
 - # LOMBOK
 
@@ -61,6 +63,7 @@
     - @ResponseStatus(HttpStatus.NOT_FOUND)
 
   - ## @ResponseBody
+      -  자바 객체를 HTTP 응답 몸체로 전송할 수 있다.   
 
   - ## ServiceTest에서 에러처리 적용법
 
